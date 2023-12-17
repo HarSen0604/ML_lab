@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Bfs {
     private static void bfs(int[][] matrix, int n, int src, int dst) {
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<Integer>();
         boolean[] visited = new boolean[n];
         Arrays.fill(visited, false);
 
