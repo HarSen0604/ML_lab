@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Dfs {
     private static void dfs(int[][] matrix, int n, int src, int dst) {
-        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> stack = new Stack<Integer>();
         boolean[] visited = new boolean[n];
         Arrays.fill(visited, false);
 
