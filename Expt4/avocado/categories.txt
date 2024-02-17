@@ -1,0 +1,7 @@
+Categorical Features:
+Index(['type', 'region'], dtype='object')
+
+Numerical Features:
+Index(['Date', 'Total Volume', '4046', '4225', '4770', 'Total Bags',
+       'Small Bags', 'Large Bags', 'XLarge Bags', 'AveragePrice'],
+      dtype='object')
