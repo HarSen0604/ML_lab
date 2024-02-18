@@ -1,0 +1,5 @@
+Categorical Features:
+Index(['MOVIES', 'YEAR', 'GENRE', 'ONE-LINE', 'STARS', 'VOTES', 'Gross'], dtype='object')
+
+Numerical Features:
+Index(['RATING', 'RunTime'], dtype='object')
