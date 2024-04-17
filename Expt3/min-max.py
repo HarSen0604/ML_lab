@@ -1,4 +1,3 @@
-
 import math
 
 # Constants for players
@@ -64,24 +63,6 @@ def minimax(board, depth, alpha, beta, maximizing_player):
                     if beta <= alpha:
                         break  # Alpha cut-off
         return min_eval
-
-# Function to find the best move using Mini-Max with alpha-beta pruning
-def find_best_move(board):
-    best_eval = -math.inf
-    best_move = None
-    alpha = -math.inf
-    beta = math.inf
-    for i in range(len(board)):
-        for j in range(len(board[i])):
-            if board[i][j] == EMPTY:
-                board[i][j] = PLAYER_O
-                eval = minimax(board, 0, alpha, beta, False)
-                board[i][j] = EMPTY
-                if eval > best_eval:
-                    best_eval = eval
-                    best_move = (i, j)
-                alpha = max(alpha, eval)
-    return best_move
 
 # Function to find the best moves using Mini-Max with alpha-beta pruning
 def find_best_moves(board):
